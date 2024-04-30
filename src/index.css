@@ -11,3 +11,119 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #0f172a;
+  font-size: 400;
+  line-height: 1;
+  background: #f8fafc;
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.review {
+  width: 90vw;
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out all;
+  text-align: center;
+}
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  border: 50%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+.img-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #645cff;
+  border-radius: 50%;
+  top: -0.25rem;
+  right: -0.5rem;
+}
+.quote-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: #645cff;
+  color: #fff;
+}
+.author {
+  margin-bottom: 0.5rem;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.job {
+  text-transform: uppercase;
+  color: #645cff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  letter-spacing: 1px;
+}
+.info {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  color: #475569;
+}
+.btn-container {
+  margin-bottom: 1rem;
+}
+.prev-btn,
+.next-btn {
+  color: #3c3799;
+  font-size: 1.65rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0 0.5rem;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+.surprise {
+  background: #c1beff;
+  color: #645cff;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 0.25rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.surprise:hover {
+  background-color: #3c3799;
+  color: #fff;
+}
